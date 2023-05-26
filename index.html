@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Pallate</title>
+    <link rel="stylesheet" href="website.css">
+    <script src="https://kit.fontawesome.com/287baafe5d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+        
+       <script type="text/javascript">
+ 	 !function(e,n,i,t,a,r,o,d){var s=e[a]=e[a]||[];if(s.invoked=0,s.initialised>0||s.invoked>0)return console.error("MoEngage Web SDK initialised multiple times. Please integrate the Web SDK only once!"),!1;e.moengage_object=a;var l={},g=function n(i){return function(){for(var n=arguments.length,t=Array(n),a=0;a<n;a++)t[a]=arguments[a];(e.moengage_q=e.moengage_q||[]).push({f:i,a:t})}},u=["track_event","add_user_attribute","add_first_name","add_last_name","add_email","add_mobile","add_user_name","add_gender","add_birthday","destroy_session","add_unique_user_id","moe_events","call_web_push","track","location_type_attribute"],m={onsite:["getData","registerCallback"]};for(var c in u)l[u[c]]=g(u[c]);for(var v in m)for(var f in m[v])null==l[v]&&(l[v]={}),l[v][m[v][f]]=g(v+"."+m[v][f]);r=n.createElement(i),o=n.getElementsByTagName("head")[0],r.async=1,r.src=t,o.appendChild(r),e.moe=e.moe||function(){return(s.invoked=s.invoked+1,s.invoked>1)?(console.error("MoEngage Web SDK initialised multiple times. Please integrate the Web SDK only once!"),!1):(d=arguments.length<=0?void 0:arguments[0],l)},r.addEventListener("load",function(){if(d)return e[a]=e.moe(d),e[a].initialised=e[a].initialised+1||1,!0}),r.addEventListener("error",function(){return console.error("Moengage Web SDK loading failed."),!1})}(window,document,"script","https://cdn.moengage.com/webpush/moe_webSdk.min.latest.js","Moengage");
+
+      
+        Moengage = moe({
+        app_id: "7GWHH3LRMY2O44N6P4ZAOX2X",
+        debug_logs: 0,
+	swPath: "https://color-pallete-oc7hnf3lv-parvtaneja.vercel.app/serviceworker.js"
+        });
+         Moengage.call_web_push({  
+      "soft_ask":true,
+      "main_class":"moe-main-class", //parent div enclosing the entire Soft-Ask-HTML
+      "allow_class":"moe-allow-class", //the Allow Button(s)
+      "block_class":"moe-block-class" //the Block Button(s)
+  });
+        </script>
+        <link rel="manifest" href="/manifest.json" />
+        
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar ">
+        <div class="navbar_container">
+            <a href="#home" id="navbar_logo">COLOR</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                
+                <li class="navbar_item">
+                    <a href="#home" class="navbar_links" id="home-page">HOME</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#about" class="navbar_links" id="about-page">ABOUT</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="#services" class="navbar_links" id="services-page">SERVICES</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="#signup" class="button" id="signup">SIGN UP</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero sectionn -->
+    <div class="hero" id="home">
+        <div class="hero_container">
+        <h1 class="hero_heading">Choose your <span>colors</span></h1>  
+        <p class="hero_description">Unlimited Possibilities</p> 
+        <button class="main_btn"><a href="#about">Explore</a></button>
+        </div>
+    </div>
+
+    <!-- aboutt section -->
+    <div class="main" id="about">
+        <div class="main_container">
+            <div class="main_img-container">
+             <div class="main_img-card"><i class="fas fa-layer-group"></i>
+             </div>   
+            </div>
+            <div class="main_content">
+                <h1>What do we do?</h1>
+                <h2>we help businesses scale</h2>
+                <p>
+                    Schedule a call to learn more about our services 
+                </p>
+                <button class="main_btn"><a href="#">Schedule Call</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- services section -->
+    <div class="services" id="services">
+        <h1>Our Services</h1>
+        <div class="services_wrapper">
+            <div class="services_card">
+                <h2>Custom Colorways</h2>
+                <p>AI Powered Technology</p>
+                <div class="services_btn"><button>Get Started</button></div>
+            </div>
+            <div class="services_card">
+                <h2>Are You Ready?</h2>
+                <p>Take the leap</p>
+                <div class="services_btn"><button>Get Started</button></div>
+            </div>
+            <div class="services_card">
+                <h2>Full Gradients</h2>
+                <p>100 Combinations</p>
+                <div class="services_btn"><button>Get Started</button></div>
+            </div>
+            <div class="services_card">
+                <h2>Infinite Choices</h2>
+                <p>1000's of colors</p>
+                <div class="services_btn"><button>Get Started</button></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- feature section -->
+    <div class="main" id="sign-up">
+        <div class="main_container">
+            <div class="main_content">
+                <h1>Join Our Team</h1>
+                <h2>Sign Up Today</h2>
+                <p>
+                    See what makes us different 
+                </p>
+                <button class="main_btn"><a href="./signup.html">Sign-up</a></button>
+            </div>
+            <div class="main_img-container">
+             <div class="main_img-card"><i class="fas fa-users"></i></div>   
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- footer section -->
+    <div class="footer_container">
+        <div class="footer_links">
+            <div class="footer_link-wrapper">
+                <div class="footer_link-items">
+                    <h2>About Us</h2>
+                    <a href="/">How it works</a>
+                    <a href="/">Testimonals</a>
+                    <a href="/">Careers</a>
+                    <a href="/">Investment</a>
+                    <a href="/">Terms of Serices</a>
+                </div>
+                <div class="footer_link-items">
+                    <h2>Contact Us</h2>
+                    <a href="/">Contact</a>
+                    <a href="/">Support</a>
+                    <a href="/">Destinations</a>
+                    <a href="/">Sponserships</a>
+                </div>
+            </div>
+            <div class="footer_link-wrapper">
+                <div class="footer_link-items">
+                    <h2>Videos</h2>
+                    <a href="/">Submit Videos</a>
+                    <a href="/">Ambassadors</a>
+                    <a href="/">Agency</a>
+                    <a href="/">Influencers</a>
+                </div>
+                <div class="footer_link-items">
+                    <h2>Social Media</h2>
+                    <a href="/">Instagram</a>
+                    <a href="/">Facebook</a>
+                    <a href="/">Youtube</a>
+                    <a href="/">Twiter</a>
+                </div>
+            </div>
+        </div>
+        <div class="social_media">
+            <div class="social_media-wrap">
+                <div class="footer_logo">
+                    <a href="" id="footer_logo">COLOR</a>
+                </div>
+                <p class="website_right"> COLOR 2022.All Rights Reserved</p>
+                <div class="social_icons">
+                    <a href="/" class="social_icon-link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="/" class="social_icon-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="/" class="social_icon-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="/" class="social_icon-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="/" class="social_icon-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="moe-main-class" style="display:none;">
+  	Recieve Notifications ?
+		...
+  <button class="moe-allow-class">YES</button>
+  <button class="moe-block-class>NO</button>
+  </div>                                                                                               
+            
+		<srcipt src ="serviceworker.js"></script>
+    <script src="website.js"></script>
+	    
+</body>
+</html>
